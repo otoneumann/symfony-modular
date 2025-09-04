@@ -15,4 +15,21 @@ final class ProductController extends AbstractController
             'controller_name' => 'ProductController',
         ]);
     }
+
+    #[Route('/modul', name: 'modul_index')]
+    public function modul(): Response
+    {
+        return $this->render('product/modul.html.twig', [
+            'controller_name' => 'ProductController',
+        ]);
+    }
+
+    #[Route('/racks', name:'rack_index')]
+    public function racks(): Response
+    {
+        return $this->render('product/rack.html.twig', [
+            'controller_name' => 'ProductController',
+        ]);
+    }
+
 }
