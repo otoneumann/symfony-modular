@@ -1,27 +1,29 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ProductController!{% endblock %}
-
 {% block body %}
 
-    <h1>Products</h1>
+    <h2>Everything about modules ))</h2>
+
     <a href="{{ path('home_index') }}">Home</a>
     <table>
         <thead>
         <tr>
             <th>Name</th>
             <th>Description</th>
-            <th>Size</th>
+            <th>Price €</th>
         </tr>
         </thead>
         <tbody>
-        {% for product in products %}
+        {% for module in modules %}
             <tr>
-                <td>{{ product.name }}</td>
-                <td>{{ product.description }}</td>
-                <td>{{ product.size }}</td>
+                <td>{{ module.name }}</td>
+                <td>{{ module.description }}</td>
+                <td>{{ module.price }}</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
+
+
 {% endblock %}
+

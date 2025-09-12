@@ -28,7 +28,7 @@ class ModularRacks
         return $this->id;
     }
 
-    public function getRackName(): ?string
+    public function getRackName(): string
     {
         return $this->rack_name;
     }
