@@ -5,6 +5,10 @@
 {% block body %}
 
     <h1>Products</h1>
+
+    <a href="{{ path('product_new') }}">New Product</a>
+
+
     <a href="{{ path('home_index') }}">Home</a>
     <table>
         <thead>
@@ -17,7 +21,11 @@
         <tbody>
         {% for product in products %}
             <tr>
-                <td>{{ product.name }}</td>
+                <td>
+                    <a href="{{ path('product_show', {'id': product.id}) }}">
+                        {{ product.name }}
+                    </a>
+                </td>
                 <td>{{ product.description }}</td>
                 <td>{{ product.size }}</td>
             </tr>
