@@ -1,45 +1,26 @@
-
-###> symfony/framework-bundle ###
-/.idea
-/.env
-/.env.local
-/.env.local.php
-/.env.*.local
-/config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
-/var/
-/vendor/
-###< symfony/framework-bundle ###
- .idea
-# macOS
-.DS_Store
-/.env.dev
-
-###> phpunit/phpunit ###
-/phpunit.xml
-/.phpunit.cache/
-###< phpunit/phpunit ###
 # IDE / editor files
 .idea/
 *.iml
+/.vscode/
 
-# OS generated files
+# OS files
+.DS_Store
 Thumbs.db
 
-# Symfony cache & logs
-/var/cache/
-/var/log/
-
-# Composer dependencies
+# Symfony files
+/var/
+/bin/
+/public/bundles/
+/config/secrets/prod/prod.decrypt.private.php
+/symfony.lock
 
 # Environment files
 .env
 .env.local
+.env.*.local
 .env.dev
 .env.test
 
-# Symfony lock file (optional if generated)
-/symfony.lock
-
-# PHPStorm & other IDE helpers
-/.vscode/
+# PHPUnit
+/phpunit.xml
+/.phpunit.cache/
