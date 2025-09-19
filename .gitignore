@@ -19,3 +19,27 @@
 /phpunit.xml
 /.phpunit.cache/
 ###< phpunit/phpunit ###
+# IDE / editor files
+.idea/
+*.iml
+
+# OS generated files
+Thumbs.db
+
+# Symfony cache & logs
+/var/cache/
+/var/log/
+
+# Composer dependencies
+
+# Environment files
+.env
+.env.local
+.env.dev
+.env.test
+
+# Symfony lock file (optional if generated)
+/symfony.lock
+
+# PHPStorm & other IDE helpers
+/.vscode/
